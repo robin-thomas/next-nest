@@ -1,0 +1,18 @@
+{
+  "name": "next-nest",
+  "author": "Robin Thomas <robinthomas2591@gmail.com>",
+  "scripts": {
+    "pre-commit": "npm run pre-commit --workspaces",
+    "prepare": "husky install",
+    "start:client": "npm run dev --workspace=frontend",
+    "start:server": "npm run start:dev --workspace=backend"
+  },
+  "devDependencies": {
+    "husky": "^8.0.3",
+    "lint-staged": "^13.2.2"
+  },
+  "workspaces": [
+    "backend",
+    "frontend"
+  ]
+}
